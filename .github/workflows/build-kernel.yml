@@ -13,4 +13,4 @@ jobs:
           bump-kernel: false
           bump-modules: false
           gpg-key: ${{ secrets.GPG_KEY }}
-          gpg-passphrase: ${{ GPG_PASSPHRASE }}
+          gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
