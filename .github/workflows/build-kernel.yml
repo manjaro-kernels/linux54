@@ -1,4 +1,4 @@
-name: update_kernel
+name: Build Kernel
 
 on:
   workflow_dispatch:
@@ -14,3 +14,6 @@ jobs:
           bump-modules: false
           gpg-key: ${{ secrets.GPG_KEY }}
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          boxit-host: ${{ secrets.BOXIT_HOST }}
+          boxit-target: ${{ secrets.BOXIT_TARGET }}
+          ssh-key: ${{ secrets.SSH_PACKAGE_CI }}
