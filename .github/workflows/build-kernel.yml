@@ -9,11 +9,12 @@ jobs:
     steps:
       - uses: manjaro-kernels/kernel-action@boxit-rebase
         with:
-          gitlab-pw: ${{ secrets.gitlab_server_user }}
-          build-mirror: ${{ secrets.BUILD_MIRROR }}
-          branch: "testing"
+          branch: "unstable"
           bump-kernel: false
           bump-modules: false
+          
+          gitlab-pw: ${{ secrets.gitlab_server_user }}
+          build-mirror: ${{ secrets.BUILD_MIRROR }}
           gpg-key: ${{ secrets.GPG_KEY }}
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
           boxit-host: ${{ secrets.BOXIT_HOST }}
