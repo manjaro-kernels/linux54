@@ -7,7 +7,7 @@ jobs:
   build-kernel:
     runs-on: ubuntu-20.04
     steps:
-      - uses: manjaro-kernels/kernel-action@boxit-rebase
+      - uses: manjaro-kernels/kernel-action@master
         with:
           branch: "unstable"
           bump-kernel: false
