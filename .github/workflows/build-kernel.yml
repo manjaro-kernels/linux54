@@ -11,7 +11,7 @@ jobs:
         with:
           branch: "unstable"
           bump-kernel: false
-          bump-modules: false
+          bump-modules: none
           
           gitlab-pw: ${{ secrets.gitlab_server_user }}
           build-mirror: ${{ secrets.BUILD_MIRROR }}
