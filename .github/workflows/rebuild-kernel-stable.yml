@@ -11,6 +11,7 @@ jobs:
         with:
           branch: "stable"
           bump-kernel: false
+          bump-pkgrel: true
           bump-modules: git
           
           gitlab-pw: ${{ secrets.gitlab_server_user }}
